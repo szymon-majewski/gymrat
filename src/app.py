@@ -2,9 +2,10 @@ from instagram_uploader import upload_image_to_instagram
 from dropbox_uploader import upload_to_dropbox
 from ai_generator import generate_text, generate_image
 
-text_prompt = "Write a short, motivational text for an instagram post about starting out with excercising at the gym."
-image_prompt = "An european and motivated female teenager excercising at the gym for the first time."
-image_path = "gym_3.png"
+text_prompt = "Write a short text for an instagram post, in which you encourage people above 40 years old to start exercising at the gym."
+image_prompt = "A naturally looking, middle-aged man exercising at the gym."
+base_path = "older_1"
+image_path = f"{base_path}.png"
 
 instagram_caption = generate_text(text_prompt)
 generate_image(image_prompt, image_path)
